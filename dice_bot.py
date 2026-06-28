@@ -76,7 +76,7 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await update.message.reply_text(f"🟢 {number} 🟢")
 
     elif text == NEGATIVE_BUTTON:
-        number = -random.randint(1, 9)
+        number = random.randint(1, 9)
         await update.message.reply_text(f"🔴 {number} 🔴")
 
 
